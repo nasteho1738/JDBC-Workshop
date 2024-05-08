@@ -10,7 +10,7 @@ public interface CityDao {
     List<City> findByName(String name);
     List<City> findAll();
     City add(City city);
-    City update(City city);
+    int update(City city);
     int delete(City city);
 
 }

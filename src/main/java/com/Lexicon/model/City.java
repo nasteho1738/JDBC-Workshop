@@ -8,7 +8,7 @@ public class City {
     private String District;
     private int population;
 
-    public City(String name, String countryCode, String district, int population) {
+    public City(int id, String name, String countryCode, String district, int population) {
         this.name = name;
         CountryCode = countryCode;
         District = district;
@@ -24,7 +24,6 @@ public class City {
         this.population = population;
     }
 
-
     public int getId() {
         return id;
     }
@@ -37,12 +36,24 @@ public class City {
         return CountryCode;
     }
 
+    public void setCountryCode(String countryCode) {
+        CountryCode = countryCode;
+    }
+
     public String getDistrict() {
         return District;
     }
 
+    public void setDistrict(String district) {
+        District = district;
+    }
+
     public int getPopulation() {
         return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
     }
 
     @Override
