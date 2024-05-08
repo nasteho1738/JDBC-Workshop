@@ -96,6 +96,7 @@ public class CityDaoJDBC implements CityDao{
                     city.setDistrict(resultSet.getString("District"));
                     city.setPopulation(resultSet.getInt("population"));
                     cities.add(city);
+
                 }
             }
         } catch (SQLException e) {
